@@ -1,6 +1,6 @@
 
 
-29 Inheritance (inhert the attributes of another class without having to write it out again) 
+# 29 Inheritance (inhert the attributes of another class without having to write it out again) 
 
 from Chef import Chef
 from ChineseChef import ChineseChef
@@ -11,7 +11,7 @@ myChef.make_special_dish()
 myChineseChef = ChineseChef()
 myChineseChef.make_special_dish()
 
-28 Class Functions 
+# 28 Class Functions 
 from student import Student
 
 student1 = Student("Oscar", "Accounting", "3.1")
@@ -20,7 +20,7 @@ student2 = Student("Phyllis", "Business", "3.8")
 print(student2.on_honor_roll())
 
 
-27 Multiple choice Quiz
+# 27 Multiple choice Quiz
 from Question import Question
 question_prompts = [
     "What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n",
@@ -47,7 +47,7 @@ def run_test(questions):
 
 run_test(questions)
 
-26 Classes & Objects 
+# 26 Classes & Objects 
 
 from student import Student
 
@@ -57,7 +57,7 @@ student2 = Student("Pam", "Art", "2.5", True)
 print(student2.gpa)
 
 
-25 Modules and Pip (need to have a module file with tools in it) www.list of python modules.com
+# 25 Modules and Pip (need to have a module file with tools in it) www.list of python modules.com
 
 import useful_tools
 
@@ -98,7 +98,7 @@ except ZeroDivisionError as err:
 except ValueError:
     print("invalid input")
 
-21 building a Translator
+# 21 building a Translator
 
 def translate(phrase):
     translation = ""
@@ -116,7 +116,7 @@ def translate(phrase):
 print(translate(input("Enter a phrase: ")))
 
 
-20 2D Lists & Nested Loops
+# 20 2D Lists & Nested Loops
 number_grid = [
     [1, 2, 3],
     [4, 5, 6],
@@ -127,7 +127,7 @@ for row in number_grid:
     for col in row:
         print(col)
 
-19 Exponent Function
+# 19 Exponent Function
 def raise_to_power(base_num, pow_num):
     result = 1
     for index in range(pow_num):
@@ -136,7 +136,7 @@ def raise_to_power(base_num, pow_num):
 
 print(raise_to_power(2, 4))
 
-18 For Loops
+# 18 For Loops
 friends = ["Jim", "Karen", "Kevin"]
 
 for index in range(5):
@@ -146,7 +146,7 @@ for index in range(5):
       print("Not first")
 
 
-17 Building a Guessing Game
+# 17 Building a Guessing Game
 
 secret_word = "giraffe"
 guess = ""
@@ -168,7 +168,7 @@ else:
     print("You Win!")
 
 
-16 While Loops
+# 16 While Loops
 i = 1
 while i <= 10:
     print(i)
@@ -177,7 +177,7 @@ while i <= 10:
 
 print("Done with Loop")
 
-15 Dictionaries
+# 15 Dictionaries
 monthConversions = {
     "Jan": "January",
     "Feb": "February",
@@ -197,7 +197,7 @@ monthConversions = {
 print(monthConversions.get("lll", "Not a valid key"))
 
 
-14 Better Calculator
+# 14 Better Calculator
 num1 = float(input("Enter first number: "))
 op = input("Enter operator: ")
 num2 = float(input("Enter second number: "))
@@ -214,7 +214,7 @@ elif op == "*":
 else:
     print("Invalid Operator")
 
-13 If Statements & Comparisons
+# 13 If Statements & Comparisons
 def max_num(num1, num2, num3):
     if num1 >= num2 and num1 >= num3:
         return num1
@@ -226,7 +226,7 @@ def max_num(num1, num2, num3):
 print(max_num(3, 40, 5))
 
 
-12 If Statements
+# 12 If Statements
 is_male = False
 is_tall = True
 
@@ -239,7 +239,7 @@ elif not(is_male) and (is_tall):
 else:
     print("you are either not a male and not tall")
 
-11 Return function
+# 11 Return function
 def cube(num):
     return num*num*num
 
@@ -248,7 +248,7 @@ result = cube(4)
 print(result)
 
 
-10 Functions
+# 10 Functions
 def sayhi(name, age):
     print("Hello " + name + ", you are " + str(age))
 
@@ -256,24 +256,24 @@ def sayhi(name, age):
 sayhi("Mike", 39)
 sayhi("Steve", 40)
 
-9 Tuples used for data that can't be changed
+# 9 Tuples used for data that can't be changed
 coordinates = [(4, 5), (3, 8) (2, 9)]
 coordinates[1] = 10
 print(coordinates[1])
 
-8
+# 8
 lucky_numbers = [4, 8, 15, 16, 23, 42]
 friends = ["Kevin", "Karen", "Jim", "Jim", "Oscar", "Toby"]
 
 friends2 = friends.copy()
 print(friends2)
 
-7
+# 7
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 friends [1] = "Mike"
 print(friends[1:3])
 
-6
+# 6
 name = input("what is your name: ")
 age = input("How old are you: ")
 color = input("what is your favorate color: ")
@@ -282,7 +282,7 @@ print("Best person is " + name )
 print("This is how old he is " + age )
 print("His favorate color is " + color)
 
-6
+# 6
 color = input ("Enter a color: ")
 plural_noun = input ("Enter a Plural Noun: ")
 celebrity = input ("Enter a celebrity: ")
@@ -292,7 +292,7 @@ print(plural_noun + " are blue")
 print("I love " + celebrity)
 
 
-5
+# 5
 num1 = input("Enter a number: ")
 num2 = input("Enter another number: ")
 result = float(num1) + float(num2)
@@ -300,23 +300,23 @@ result = float(num1) + float(num2)
 print(result)
 
 
-4
+# 4
 name = input("Enter your name: ")
 age = input("Enter your age: ")
 print("Hello " + name + "! You are " + age)
 
 
-3
+# 3
 from math import *
 my_num = -5
 print(sqrt(36))
 
-2
+# 2
 phrase = "Giraffe Academy"
 print(phrase.replace("Giraffe", "Elephant"))
 
 
-1
+# 1
 character_name = "Tom"
 character_age = 50.45455
 is_male = False
